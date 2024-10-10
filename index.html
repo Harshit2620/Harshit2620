@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      function calculateTotalPrice(){
+        var price = document.getElementById("price").innerHTML;
+        var quantity = document.getElementById("quantity").value;
+        var total = price*quantity;
+        document.getElementById("total").innerHTML=total;
+        document.getElementById("item-count").innerHTML=quantity;
+      }
+    </script>
+
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- TOP Start -->
+        <div class="row bg-dark text-light">
+            <div class="col-sm-3">
+                <div class="row mt-3">
+                    <div class="col-sm-4">
+                        <img src="images/logo.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-8 my-auto d-flex justify-content-center">
+                        <div class=" my-auto me-2 fs-4">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="">
+                            <span>Hello</span><br>
+                            <b>Select your address</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5 mt-2">
+                <div class="input-group">
+                    <button class="btn border btn-outline-dark bg-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">All</button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>                    
+                    <input type="text" class="form-control " aria-describedby="basic-addon1" aria-label="Text input with dropdown button">
+                    <span class="input-group-text bg-warning border border-warning" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                  </div>
+            </div>
+            <div class="col-sm-4 mt-2">
+                <div class="row">
+                    <div class="col-sm-3 d-flex">
+                        <img src="images/flag.jpg" class="img-fluid mt-1 h-25" alt="">
+                        <div class="input-group h-25">
+                            <button class="btn dropdown-toggle text-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">EN</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>                              
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="" style="font-size: 14px;">Hello, sign in</div>
+                        <div class="input-group">
+                            <button class="btn p-0 text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Address & Lists</button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>                              
+                            </ul>
+                          </div>
+                        
+                    </div>
+                    <div class="col-sm-3 text-end h-25">
+                        <div class="">Return</div>
+                        <b style="font-size: 13px;">&Orders</b>
+                    </div>
+                    <div class="col-sm-3 mt-2">
+                        <i class="fa-solid fa-shopping-cart fs-3"></i><b>Cart</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- TOP End -->
+
+        <!-- Navbar Start -->
+         <div class="row">
+            <div class="col-sm-12">
+                <div class="row bg-secondary text-light">
+                    <div class="col-sm-2 my-auto">
+                        <button class=" bg-secondary btn btn-outline-dark px-3"><i class="fa-solid fa-bars"></i></button> All
+                    </div>
+                    <div class="col-sm-10 mx-auto" style="font-size: 12px;font-weight: 600;">
+                        <nav class="navbar navbar-expand-lg bg-secondary">
+                            <div class="container-fluid">                              
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                  <li class="nav-item">
+                                    <a class="nav-link active text-light" aria-current="page" href="#">Amazon miniTV</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Sell</a>
+                                  </li>
+                                  
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Best Sellers</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Mobiles</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Today's Deals</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Customer Service</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Electronics</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">New Releases</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Prime</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Home & Kitchen</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Amazon Pay</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Computers</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="#">Fashion</a>
+                                  </li>
+                                  
+                                  
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <!-- Navbar End -->
+
+        <!-- Main Section Start -->
+          <!-- Main Section Start -->
+<div class="row bg-info">
+  <div class="col-sm-12">
+      <div class="row p-3">
+          <div class="col-sm-8 p-0">
+              <div class="card rounded-0">
+                  <div class="row px-3">
+                      <div class="col-sm-8 mt-3"><h2>Shopping Cart</h2></div>
+                      <div class="col-sm-4 mt-5 pe-5 text-end">Price</div>
+                  </div>
+                  <hr class="mx-3">
+                  <div class="row px-3">
+                      <div class="col-md-3">
+                          <img src="images/watch.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-6">
+                          <div class="card-body">
+                              <h6 class="card-title">Fire-Boltt Ninja Call Pro 1.83 Smart Watch With Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating,240*2</h6>
+                              <span class="text-danger p-0">In stock</span><br>
+                              <span class="text-secondary">Eligible to FREE Shopping</span>
+                              <p class="card-text"><input type="checkbox"> This will be a gift Learn more</p>
+                              <b>Colour :</b><span>Black</span>
+                              <div class="input-group">
+                                  <select class="btn btn-info btn-sm" id="quantity" onchange="calculateTotalPrice()">
+                                      <option value="1">Qty: 1</option>
+                                      <option value="2">Qty: 2</option>
+                                      <option value="3">Qty: 3</option>
+                                      <option value="4">Qty: 4</option>
+                                  </select>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3 text-end">
+                          <b>₹ </b>
+                          <b class="me-4" id="price">1799.00</b>
+                      </div>
+                  </div>
+              </div>
+              <hr class="mx-3">
+              <div class="text-end mx-3">
+                  <span>Subtotal(<span class="fw-bold" >1</span>items)</span><b>Rs.</b><b id="subtotal"> 1799</b>
+              </div>
+          </div>
+          <div class="col-sm-4">
+              <div class="card p-3 rounded-0">
+                  <p>Your order is eligible for FREE Delivery. Select this option at checkout. Details</p>
+                  <span>Subtotal(<b id="item-count">1</b>items:) ₹ <b id="total">1799</b></span>
+                  <span class="p-0"><input type="checkbox"> This order contain a gift</span>
+                  <a href="#" class="btn btn-sm py-1 my-3 mb-4 btn-warning fs-5">Proceed to Buy</a>
+                  <button href="#" class="mt-5 py-2" style="margin-bottom: 31px;">EMI available</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- Main Section End -->
+        <!-- Main Section End -->
+
+    </div>
+</body>
+</html>

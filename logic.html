@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getprice(){
+            // alert("hello");
+            var price = document.getElementById("price").innerHTML;
+            var qty = document.getElementById("qty").value;
+            var total=parseInt(price)*parseInt(qty);
+            document.getElementById("pp").innerHTML=total;
+        }
+    </script>
+</head>
+<body>
+    <p id="title">Pepe Jeans</p>
+    <br>
+    <span id="price">1220</span>
+    <br><br>
+    <p>Select Quantity</p>
+    <select id="qty" onchange="getprice()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <br><br><br>
+    <span id="pp">1220</span>
+</body>
+</html>
+
+
+<div class="row bg-info">
+    <div class="col-sm-12">
+        <div class="row p-3">
+            <div class="col-sm-8 p-0">
+                <div class="card rounded-0">
+                    <div class="row px-3">
+                        <div class="col-sm-8 mt-3"><h2>Shopping Cart</h2></div>
+                        <div class="col-sm-4 mt-5 pe-5 text-end">Price</div>
+                    </div>
+                    <hr class="mx-3">
+                    <div class="row px-3">
+                      <div class="col-md-3">
+                        <img src="images/watch.jpg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-6">
+                        <div class="card-body">
+                          <h6 class="card-title">Fire-Boltt Ninja Call Pro 1.83 Smart Watch With Bluetooth Calling, AI Voice Assistance, 100 Sports Modes IP67 Rating,240*2</h6>
+                          <span class="text-danger p-0">In stock</span><br>
+                          <span class="text-secondary">Eligible to FREE Shopping</span>
+                          <p class="card-text"><input type="checkbox"> This will be a gift Learn more</p>
+                          <b>Colour :</b><span>Black</span>
+                          
+                          
+                          <div class="input-group">
+                            <!-- <button class="btn btn-info btn-sm dropdown-toggle text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">Qty</button> -->
+                            <!-- <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">2</a></li>
+                              <li><a class="dropdown-item" href="#">3</a></li>                              
+                              <li><a class="dropdown-item" href="#">4</a></li>                              
+                            </ul> -->
+                            <select class="btn btn-info btn-sm" id="quantity" onchange="getPrice()">
+                              <option value="1">Qty: 1</option>
+                              <option value="2">Qty: 2</option>
+                              <option value="3">Qty: 3</option>
+                              <option value="4">Qty: 4</option>
+                            </select>                                    
+                          </div>
+                           
+                        </div>                              
+                        
+                      </div>
+                      
+                      <div class="col-md-3 text-end">
+                        <b>₹ </b>
+                        <b class="me-4" id="price">1,799.00</b>
+                      </div>
+                    </div>
+                  </div>
+                  <hr class="mx-3">
+                  <div class="text-end mx-3">
+                    <span>Subtotal(<span class="fw-bold">1</span>items)</span><b id="subtotal">Rs. 1,799</b>
+
+                  </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card p-3 rounded-0">
+                    <p>Your order is eligible for FREE Delivery. Select this option at checkout. Details</p>
+                    <span>Subtotal(<b id="item-count">1</b>items:) ₹ <b id="total">1799</b></span>
+                    <span class="p-0"><input type="checkbox"> This order contain a gift</span>
+                    <a href="#" class="btn btn-sm py-1 my-3 mb-4 btn-warning fs-5">Proceed to Buy</a>
+                    <button href="#" class="mt-5 py-2" style="margin-bottom: 31px;">EMI available</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+ </div>
